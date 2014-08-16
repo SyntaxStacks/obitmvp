@@ -1,0 +1,9 @@
+<div class="obit-create">
+  
+  <%= form_for :obit, :url => {:action => "create"} do |f| %>
+    Name: <%= f.text_field :name %><br/>
+    Obituary: <%= f.text_area :obituary %><br/>
+    <%= f.submit %>
+  <% end %>
+    
+</div>

@@ -1,0 +1,8 @@
+<div class="obit-container">
+  <%= link_to "Create new Obituary", new_obit_path %>
+  <ul>
+  <% @obits.each do |obit| %>
+    <li><%= link_to obit.name, obit_path(obit) %></li>
+  <% end %>
+  </ul>
+</div>
